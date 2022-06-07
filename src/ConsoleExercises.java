@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class ConsoleExercises {
     public static void main(String[] args) {
         double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %s.%n", pi);
+        System.out.printf("The value of pi is approximately %.2f.%n", pi);
 
 //        Prompt a user to enter an integer and store that value in an int variable using the nextInt method.
 
@@ -11,7 +11,7 @@ public class ConsoleExercises {
         System.out.print("Enter a integer: ");
         int userInput = Integer.parseInt(scanner.next());
 
-        System.out.println("You entered: " + userInput);
+        System.out.println("Your number is: " + userInput);
 
 //        Prompt a user to enter 3 words, and store each of them in a separate variable. Then, display them back in the console, each on a newline.
 
@@ -42,7 +42,7 @@ public class ConsoleExercises {
 
         int length = Integer.parseInt(scanner3.next());
 
-        System.out.print("Enter the width of your room");
+        System.out.print("Enter the width of your room. ");
 
         int width = Integer.parseInt((scanner3.next()));
 
@@ -57,6 +57,14 @@ public class ConsoleExercises {
 
 
 
+
+
+
+
+
+
+
+//        https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Scanner.html link for scanner class
 
 
     }
