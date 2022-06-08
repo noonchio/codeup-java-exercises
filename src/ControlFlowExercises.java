@@ -44,6 +44,18 @@ public class ControlFlowExercises {
 
         }
 
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
 //        Display a table of powers.
 
         Scanner scanner = new Scanner(System.in);
@@ -58,7 +70,7 @@ public class ControlFlowExercises {
         if (ans.equals("Yes")) {
             System.out.println("Here is your table: ");
             for (int x = 1; x <= userInput; x++) {
-                System.out.println(x + " " + x * x + " " + x * x * x);
+                System.out.println(x + "|" + x * x + "|" + x * x * x);
             }
 
         }
@@ -86,6 +98,8 @@ public class ControlFlowExercises {
                 System.out.println("F");
             }
         }
+
+
 
 
 
