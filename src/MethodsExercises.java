@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class MethodsExercises {
 
     public static void main(String[] args) {
+/*
         System.out.println(sayName("Alfredo"));
 
         System.out.println(add(2.5, 3.2));
@@ -11,12 +12,19 @@ public class MethodsExercises {
         // Any number divided by zero gives the answer “equal to infinity.” Unfortunately, no data structure in the world of programming can store an infinite amount of data
 
         System.out.println(levelUpMultiply(6, 16));
-
-
         System.out.println(getInteger(1, 10));
+        System.out.println(factorial(userInt));
+        promptUserForFactorials();
+*/
 
 
-        System.out.println(factorial());
+/*
+        for (int i = 0; i < 10; i += 1) {
+            System.out.println(getRandomInt(1, 5));
+        }
+*/
+
+        diceRoll();
 
     }
 
@@ -76,42 +84,77 @@ public class MethodsExercises {
         if (num > min && num < max) {
             return num;
         }
+        System.out.println("Input out of range");
         return getInteger(min, max);
     }
 
 
 //    Calculate the factorial of a number.
 
-    public static int factorial() {
-        boolean willContinue = false;
+    public static int factorial(int userInt) {
+
         Scanner scanner1;
+
+
+        scanner1 = new Scanner(System.in);
+        System.out.print("Enter an integer from 1 to 10 ");
+        long userInput = Integer.parseInt(scanner1.next());
+
+        int i, fact = 1;
+
+        for (i = 1; i <= userInput; i++) {
+            fact = fact * i;
+        }
+        return fact;
+
+
+//            System.out.println("Would you like to continue:  (Yes/No)");
+//            String ans = scanner1.next();
+//            if (Objects.equals(ans, "Yes")){
+//                return fact;
+//            }
+//
+//
+//        return factorial();
+    }
+
+    public static void promptUserForFactorials() {
+        Scanner sc = new Scanner(System.in);
+        String continueMessage;
+        System.out.println("Welcome to the factorial calculator!!!");
         do {
+            System.out.println("What number should we calculate?");
+            int userInt = getInteger(1, 10);
+            System.out.println("The factorial of " + userInt + " is " + factorial(userInt));
 
-            scanner1 = new Scanner(System.in);
-            System.out.print("Enter an integer from 1 to 10 ");
-            long userInput = Integer.parseInt(scanner1.next());
-
-            int i, fact = 1;
-
-            for (i = 1; i <= userInput; i++) {
-                fact = fact * i;
-            }
-
-            System.out.println("Would you like to continue:  (Yes/No)");
-            String ans = scanner1.next();
-
-            return fact;
+            System.out.println("Would you like to enter another number? (yes/no)");
+            continueMessage = sc.nextLine();
+        } while (continueMessage.equalsIgnoreCase("yes"));
 
 
+    }
+                // Dice random number
+        public static int getRandomInt(int min, int max) {
+            return min + (int)(Math.random() * ((max - min) + 1));
+        }
 
+        public static void diceRoll() {
+            System.out.println("Welcome to Dice Roll!");
+            System.out.println("Enter number of sides of the dice. (1-6)");
+            int noOfSidesOfDice = getInteger(1, 6);
+            System.out.printf("You have rolled %d and a %d",
+                    getRandomInt(1, noOfSidesOfDice),
+                    getRandomInt(1, noOfSidesOfDice));
 
-        } while (willContinue);
+        }
 
 
 
     }
 
-}
+
+
+
 
 
 
