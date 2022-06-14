@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class Lec {
     public static void main(String[] args) {
+/*
         int[] numbers;
         numbers = new int[5];
 
@@ -31,6 +32,8 @@ public class Lec {
         }
 
     // Arrays of Objects
+*/
+
 
 
     }
