@@ -21,8 +21,8 @@ public class Person {
     }
 
     public static void main(String[] args) {
-//        Person person1 = new Person("Alfredo");
-//        person1.sayHello();
+        Person person1 = new Person("Alfredo");
+        person1.sayHello();
 
 
 
