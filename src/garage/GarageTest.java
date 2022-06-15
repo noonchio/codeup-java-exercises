@@ -19,7 +19,10 @@ public class GarageTest {
 
         Garage myGarage = new Garage();
         myGarage.setVehicles(vehicles);
+        Vehicle vehicle1 = myGarage.findVehicle("Rocky", myGarage.getVehicles());
         myGarage.retrieveVehicles();
+
+
 
     }
 }

@@ -13,7 +13,13 @@ public class Vehicle {
         this.name = name;
     }
 
+    public Vehicle(){
 
+    }
+
+    public Vehicle(String name){
+        this.name = name;
+    }
 
     public void makeNoise(){
         System.out.println("beep beep");
