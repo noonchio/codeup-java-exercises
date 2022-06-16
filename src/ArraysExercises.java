@@ -1,11 +1,7 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Scanner;
 
 
-public class ArrayExercises {
+public class ArraysExercises {
 
 
     public static void main(String[] args) {
@@ -24,7 +20,7 @@ public class ArrayExercises {
                     System.out.println(person.getName());
                 }
 
-                Person[] newPersonsArray = ArrayExercises.addPerson(new Person("Gonzalo"), persons );
+                Person[] newPersonsArray = ArraysExercises.addPerson(new Person("Gonzalo"), persons );
                 for (Person person: newPersonsArray){
                     System.out.println(person.getName());
                 }

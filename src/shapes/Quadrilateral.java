@@ -25,6 +25,14 @@ abstract class Quadrilateral extends Shape {
         this.width = width;
     }
 
+    public double getPerimeter(){
+        return (2 * length) + (2 * width);
+    }
+
+    public double getArea(){
+        return length * width;
+    }
+
 
 
 }
