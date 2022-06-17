@@ -31,19 +31,25 @@ public class Student {
         this.grades = new ArrayList<>();
     }
 
-//    // returns the student's name
-//    public String getName() {
-//        return null;
-//    }
+/*
+    // returns the student's name
+    public String getName() {
+        return null;
+    }
+*/
 
     // adds the given grade to the grades property
     public void addGrade(int grade) {
-
+            this.grades = new ArrayList<>();
+            grades.add(grade);
     }
 
     // returns the average of the students grades
-    public double getGradeAverage() {
-        return 0;
+    public double getGradeAverage(int[] grades) {
+        int sum = 0;
+        for (int grade : grades) sum = sum + grade;
+
+        return sum / grades.length;
     }
 
 }

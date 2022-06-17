@@ -1,7 +1,7 @@
 public class ServerNameGenerator {
 
-    private String[] adjectives = {"brave", "busy", "brainy", "blushing", "manic", "dark", "bright", "tasty", "careful", "calm"};
-    private String[] nouns = {"ice", "Insect", "", "Branch", "Orc", "Airport", "Flag", "Afternoon", "Dog", "Finland"};
+    private String[] adjectives = {"Brave", "Busy", "Brainy", "Blushing", "Blunt", "Dark", "Bright", "Tasty", "Careful", "Calm"};
+    private String[] nouns = {"Ice", "Insect", "Fedora", "Branch", "Orc", "Airport", "Flag", "Afternoon", "Dog", "Finland"};
 
     public String[] getAdjectives() {
         return adjectives;
