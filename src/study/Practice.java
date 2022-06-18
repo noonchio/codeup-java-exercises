@@ -1,5 +1,7 @@
 package study;
 
+import java.util.ArrayList;
+
 public class Practice {
     public static void main(String[] args) {
 //        2. Create a public static method in the Practice class called *subtractTen* that takes one integer argument and returns that number minus 10.
@@ -25,7 +27,12 @@ public class Practice {
             return  average;
         }
 
+//            12. In your Practice class, create a static method named multiplyAll. It should accept an integer and an ArrayList of integers. It should take the ArrayList argument and multiply all its elements by the value of the integer argument. (I need help in 12)
 
+    public static int[] multiplyAll(int num, ArrayList<Integer>integers){
+
+        return new int[0];
+    }
 
 
 }

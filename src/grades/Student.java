@@ -6,7 +6,7 @@ public class Student {
 
     private String name;
 
-    private ArrayList<Integer> grades;
+//    private ArrayList<Integer> grades;
 
     public String getName() {
         return this.name;
@@ -16,20 +16,30 @@ public class Student {
         this.name = name;
     }
 
-    public ArrayList<Integer> getGrades() {
-        return grades;
-    }
 
-    public void setGrades(int grades) {
-        this.grades = new ArrayList<>();
-    }
 
-    Student(){}
+//    public int[] getGrades() {
+////        return grades;
+//    }
 
-    Student(String name, int grades){
-        this.name = name;
-        this.grades = new ArrayList<>();
-    }
+//    public void setGrades(int grades) {
+//        this.grades = new ArrayList<>();
+//    }
+
+
+
+
+//    Student(String name){
+//        this.name = name;
+//        this.grades = new ArrayList<>();
+//    }
+
+//    Student(String name, int grades){
+//        this();
+////        this.grades = new ArrayList<>();
+//        this.name = name;
+//
+//    }
 
 /*
     // returns the student's name
@@ -39,17 +49,16 @@ public class Student {
 */
 
     // adds the given grade to the grades property
-    public void addGrade(int grade) {
-            this.grades = new ArrayList<>();
-            grades.add(grade);
-    }
+//    public void addGrade(int grade) {
+//            grades.add(grade);
+//    }
 
     // returns the average of the students grades
     public double getGradeAverage(int[] grades) {
         int sum = 0;
         for (int grade : grades) sum = sum + grade;
 
-        return sum / grades.length;
+        return   sum / grades.length;
     }
 
 }
