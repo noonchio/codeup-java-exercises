@@ -69,6 +69,18 @@ public class Input {
         return userInput;
     }
 
+    // refactor getInt method to use try-catch
+//    public int getInt(String prompt){
+//        int number;
+//        try {
+//            number = Integer.valueOf(getString(prompt));
+//            return number;
+//        } catch (NumberFormatException nfe){
+//            System.out.println("Wrong input, try again: ");
+//            return getInt(prompt);
+//        }
+//    }
+
 
 
 

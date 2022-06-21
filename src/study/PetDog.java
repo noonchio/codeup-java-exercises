@@ -5,6 +5,9 @@ public class PetDog extends Pet implements Companion{
 
     public boolean trained;
 
+    public boolean isTrained() {
+        return trained;
+    }
     //8. Write a constructor for PetDog that sets its name,
 
     PetDog(String name){
@@ -13,9 +16,9 @@ public class PetDog extends Pet implements Companion{
 
     //9. Write an instance method in PetDog  called isTrained that returns the boolean value of the trained property.
 
-    public boolean isTrained(){
-        return trained;
-    }
+//    public boolean isTrained(){
+//        return trained;
+//    }
 
 
     @Override
